@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>HTML Topics</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" type="text/css" href="../ext.css">
+  <script src="../upScroll.js"></script>
+</head>
+
+<body style="background-color: rgb(188, 216, 238);">
+  <!-- NavBar -->
+  <nav class="navbar navbar-expand-lg bg-light fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <strong>
+          &lt;/ jKoders >
+        </strong>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+        aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarScroll">
+        <ul class="navbar-nav my-auto my-2 my-lg-0 navbar-nav-scroll">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="../index.html">Home</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              Topics
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="../html.html">HTML</a></li>
+              <li><a class="dropdown-item" href="../cssTopics/intro.html">CSS</a></li>
+              <li><a class="dropdown-item" href="../js.html">JavaScript</a></li>
+            </ul>
+
+          </li>
+          <li class="nav-item">
+            <a href="../about.html" class="nav-link">About</a>
+          </li>
+        </ul>
+        <form class="d-flex ms-auto" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <!-- End NavBar -->
+  <div class="container">
+    <div class="row p-4 m-2">
+    </div>
+  </div>
+  <div class="container-fluid mt-2">
+    <div class="row shadow mt-2">
+      <div class="col-xl-2">
+        <div class="col-xl-2 d-xl-none">
+          <i data-bs-toggle="offcanvas" data-bs-target="#offcanvasResponsive" aria-controls="offcanvasResponsive"><img
+              src="../img/bars-solid.svg" alt="" width="50" height="50"></i>
+        </div>
+        <div class="offcanvas-xl offcanvas-start  sidebar1" tabindex="-1" id="offcanvasResponsive"
+          aria-labelledby="offcanvasResponsiveLabel">
+
+          <div class="offcanvas-header">
+            <!-- <h5 class="offcanvas-title" id="offcanvasScrollingLabel">Offcanvas with body scrolling</h5> -->
+          </div>
+
+          <h5 class="offcanvas-title ml-3">
+            Contents
+          </h5>
+          <div class="offcanvas-body">
+            <ul>
+              <li class="nav-item"><a class="nav-link" href="../html.html">HTML Introduction</a></li>
+              <li class="nav-item"><a class="nav-link" href="editors.html">HTML Editors</a></li>
+              <li class="nav-item"><a class="nav-link active_topic" href="basics.html">HTML Basic</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">HTML Elements</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">HTML Attributes</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">HTML Headings</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">HTML Paragraphs</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">HTML Styles</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">HTML Text Formatting</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-10">
+        <div class="row">
+          <div class="col-sm-12 p-3 shadow" id="html">
+            <h3>HTML Basic Examples</h3>
+            <hr>
+            <p>In this chapter we will show some basic HTML examples.</p>
+
+            <p>Don't worry if we use tags you have not learned about yet.</p>
+            <hr>
+
+            <div class="col">
+              <h3>HTML Documents</h3>
+              <p>All HTML documents must start with a document type declaration: <b> &lt;!DOCTYPE html></b>. </p>
+
+              <p> The HTML document itself begins with <b> &lt;html></b> and ends with <b> &lt;/html></b>.</p>
+
+              <p> The visible part of the HTML document is between <b> &lt;body></b> and <b> &lt;/body></b>. </p>
+              <h4>Example</h4>
+              <div class="col-sm-6 border">
+
+                <xmp>
+                  <!DOCTYPE html>
+                  <html>
+
+                  <body>
+
+                    <h1>My First Heading</h1>
+
+                    <p>My first paragraph.</p>
+
+                  </body>
+
+                  </html>
+                </xmp>
+              </div>
+
+
+
+            </div>
+            <hr>
+
+            <div>
+              <h3>The &lt;!DOCTYPE> Declaration</h3>
+              <div>
+                <p> The &lt;!DOCTYPE> declaration represents the document type, and helps browsers to display web pages
+                  correctly.</p>
+
+                <p>It must only appear once, at the top of the page (before any HTML tags).</p>
+
+                <p> The &lt;!DOCTYPE> declaration is not case sensitive.</p>
+
+                <p> The &lt;!DOCTYPE> declaration for HTML5 is:</p>
+                <p><b>&lt;!DOCTYPE></b></p>
+              </div>
+              <hr>
+              <h3>HTML Headings</h3>              
+              <p>
+                HTML headings are defined with the &lt;h1> to &lt;h6> tags.                   
+              </p>
+              <p>
+                &lt;h1> defines the most important heading. &lt;h6> defines the least important heading:
+              </p>
+              <h4>Example</h4><b>
+              <div class="col-sm-6 border p-1">
+                <p>&lt;h1>This is heading 1&lt;/h1></p>
+                <p>&lt;h2>This is heading 2&lt;/h2></p>
+                <p>&lt;h3>This is heading 3&lt;/h3></p></b>
+              </div>
+            </div>
+
+          </div>
+
+
+        </div>
+
+
+
+
+
+        <div id="jsScroll" class="scroll" onclick="scrollToTop();">
+          <i><img src="../img/angle-up-solid.svg" alt="" width="50" height="50"></i>
+        </div>
+        <!-- footer -->
+        <div class="container">
+          <footer class="py-5">
+            <hr>
+            <div class="row">
+              <div class="col-sm-2 col-md-2 col-lg-2 col-xl-2 mb-3">
+                <h5>Explore</h5>
+                <ul class="nav flex-column">
+                  <li class="nav-item mb-2"><a href="index.html" class="text-decoration-none p-0 text-muted">Home</a>
+                  </li>
+                  <li class="nav-item mb-2"><a href="#" class="text-decoration-none p-0 text-muted">Topics</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="text-decoration-none p-0 text-muted">About</a></li>
+                </ul>
+              </div>
+
+              <div class="col-sm-2 col-md-2 col-lg-2 col-xl-2 mb-3">
+                <h5>Get in Touch</h5>
+                <ul class="nav flex-column">
+                  <li class="nav-item mb-2"><a href="#" class="text-decoration-none p-0 text-muted">Instagram</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="text-decoration-none p-0 text-muted">Pinterest</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="text-decoration-none p-0 text-muted">Twitter</a></li>
+                </ul>
+              </div>
+
+              <div class="col-sm-5 col-md-5 col-lg-5 col-xl-5 mb-3 ms-auto">
+                <form>
+                  <h5>Subscribe to our newsletter</h5>
+                  <p>Monthly digest of what's new and exciting from us.</p>
+                  <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                    <label for="newsletter1" class="visually-hidden">Email address</label>
+                    <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+                    <button class="btn btn-primary" type="button">Subscribe</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <hr>
+            <div class="d-flex flex-column flex-sm-row justify-content-between">
+              <p>© 2022 Company, Inc. All rights reserved.</p>
+            </div>
+          </footer>
+        </div>
+
+
+
+
+
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+  </div>
+
+
+</body>
+
+</html>
